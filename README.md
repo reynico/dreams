@@ -7,6 +7,7 @@ Dreams uses temperature, humidity and CO2 concentration to create a Prometheus e
 * [FireBeetle ESP32 IoT microcontroller](https://www.dfrobot.com/product-1590.html) ($19)
 
 ## Diagram
+![Wiring Diagram](https://raw.githubusercontent.com/reynico/dreams/master/wiring.png)
 
 ## Setup
 Each [dreams.ino](dreams.ino), [dreams_bedroom.ino](dreams_bedroom.ino) and [dreams_kitchen.ino](dreams_kitchen.ino) belongs to your home exporters. 
