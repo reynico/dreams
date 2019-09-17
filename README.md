@@ -8,6 +8,8 @@ Dreams uses temperature, humidity and CO2 concentration to create a Prometheus e
 
 ## Diagram
 ![Wiring Diagram](https://raw.githubusercontent.com/reynico/dreams/master/wiring.png)
+* The CO2 concentration sensor uses the internal ADC located on A0. Connect the CO2 sensor analog output to A0. 5v power supply is required.
+* The DHT22 sensor uses a digital signal to send both temperature and humidity. Connect the digital output to D12. 3.3v power supply is required.
 
 ## Setup
 Each [dreams.ino](dreams.ino), [dreams_bedroom.ino](dreams_bedroom.ino) and [dreams_kitchen.ino](dreams_kitchen.ino) belongs to your home exporters. 
