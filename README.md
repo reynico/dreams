@@ -1,5 +1,5 @@
 # Dreams
-Dreams uses temperature, humidity and CO2 concentration to create a Prometheus exporter with consistent data about your environment.
+Dreams uses temperature, humidity and CO2 concentration to create a Prometheus exporter with consistent data about your environment. This repository also includes the server side stuff such as [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/). Both are [Docker](https://docs.docker.com/install/) containers running with [docker-compose](https://docs.docker.com/compose/install/). Check the [prometheus server configuration](#prometheus-server-configuration) section.
 
 - [Dreams](#dreams)
   - [Shopping list](#shopping-list)
