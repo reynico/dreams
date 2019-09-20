@@ -15,5 +15,4 @@ services:
     links:
       - prometheus
     volumes:
-      # - ./grafana/grafana_data/:/var/lib/grafana
       - ./grafana/:/etc/grafana/
