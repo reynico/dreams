@@ -1,6 +1,14 @@
 # Dreams
 Dreams uses temperature, humidity and CO2 concentration to create a Prometheus exporter with consistent data about your environment.
 
+- [Dreams](#dreams)
+  - [Shopping list](#shopping-list)
+  - [Diagram](#diagram)
+  - [Setup](#setup)
+    - [Setup the exporter](#setup-the-exporter)
+  - [Prometheus exporter](#prometheus-exporter)
+  - [Prometheus server configuration](#prometheus-server-configuration)
+
 ## Shopping list
 * [0-5000ppm CO2 sensor](https://www.dfrobot.com/product-1549.html) ($58)
 * [DHT-22 temperature and humidity sensor](https://www.dfrobot.com/product-1102.html) ($5.90)
@@ -36,7 +44,7 @@ humidity 38.00
 ```
 
 ## Prometheus server configuration
-Add to `prometheus.yml`:
+* Edit `server/prometheus.yml` to match your Dreams node IP addresses:
 ```
 scrape_configs:
   - job_name: 'dining'
@@ -54,5 +62,10 @@ scrape_configs:
     static_configs:
             - targets: ['192.168.1.8:9000']
 ```
+
+* `cd server/`
+* `docker-compose up`
+
+Your Prometheus + Grafana Docker server is now up and running, and accessible through [http://localhost:3000](http://localhost:3000). The datasource and dashboard is already configured, check `server/grafana/provisioning/`.
 
 ![Grafana Dashboard](https://raw.githubusercontent.com/reynico/dreams/master/grafana.png)
