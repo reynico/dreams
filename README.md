@@ -66,6 +66,6 @@ scrape_configs:
 * `cd server/`
 * `docker-compose up`
 
-Your Prometheus + Grafana Docker server is now up and running, and accessible through [http://localhost:3000](http://localhost:3000). The datasource and dashboard is already configured, check `server/grafana/provisioning/`.
+Your Prometheus + Grafana Docker server is now up and running, and accessible through [http://localhost:3000](http://localhost:3000). The datasource and dashboard is already configured, check [server/grafana/provisioning/](server/grafana/provisioning/).
 
 ![Grafana Dashboard](https://raw.githubusercontent.com/reynico/dreams/master/grafana.png)
