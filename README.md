@@ -1,13 +1,11 @@
-# Dreams
 Dreams uses temperature, humidity and CO2 concentration sensors to create a Prometheus exporter with consistent data about your environment. This repository also includes the server side stuff such as [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/). Both are [Docker](https://docs.docker.com/install/) containers running with [docker-compose](https://docs.docker.com/compose/install/). Check the [prometheus server configuration](#prometheus-server-configuration) section.
 
-- [Dreams](#dreams)
-  - [Shopping list](#shopping-list)
-  - [Diagram](#diagram)
-  - [Setup](#setup)
-    - [Setup the exporter](#setup-the-exporter)
-  - [Prometheus exporter](#prometheus-exporter)
-  - [Prometheus server configuration](#prometheus-server-configuration)
+- [Shopping list](#shopping-list)
+- [Diagram](#diagram)
+- [Setup](#setup)
+  - [Setup the exporter](#setup-the-exporter)
+- [Prometheus exporter](#prometheus-exporter)
+- [Prometheus server configuration](#prometheus-server-configuration)
 
 ## Shopping list
 * [0-5000ppm CO2 sensor](https://www.dfrobot.com/product-1549.html) ($58)
