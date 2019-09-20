@@ -1,0 +1,13 @@
+global:
+  scrape_interval: 10s
+
+scrape_configs:
+  - job_name: 'living'
+    scrape_interval: 5s
+    static_configs:
+            - targets: ['192.168.1.6:9000']
+
+  - job_name: 'bedroom'
+    scrape_interval: 5s
+    static_configs:
+            - targets: ['192.168.1.7:9000']
