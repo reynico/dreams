@@ -3,6 +3,7 @@ Dreams uses temperature, humidity and CO2 concentration sensors to create a Prom
 - [Shopping list](#shopping-list)
 - [Diagram](#diagram)
 - [Setup](#setup)
+  - [Setup the Arduino IDE](#setup-the-arduino-ide)
   - [Setup the exporter](#setup-the-exporter)
 - [Prometheus exporter](#prometheus-exporter)
 - [Prometheus server configuration](#prometheus-server-configuration)
@@ -19,6 +20,14 @@ Dreams uses temperature, humidity and CO2 concentration sensors to create a Prom
 
 ## Setup
 Each [dreams.ino](dreams.ino), [dreams_bedroom.ino](dreams_bedroom.ino) and [dreams_kitchen.ino](dreams_kitchen.ino) belongs to your home exporters. 
+
+### Setup the Arduino IDE
+FireBeetle is handled as an extra board for Arduino
+* Go to File -> Preferences -> Additional board URL, paste https://raw.githubusercontent.com/DFRobot/FireBeetle-ESP8266/master/package_firebeetle8266_index.json
+* Go to Tools -> Boards -> Boards manager. Install `FireBeetle-ESP8266`
+
+DHT22 needs an special library as well
+* Go to Sketch -> Include library -> Library manager. Search for `DHT22`, install.
 
 ### Setup the exporter
 * dreams*.ino contains:
